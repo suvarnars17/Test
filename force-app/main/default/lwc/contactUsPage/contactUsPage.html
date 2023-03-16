@@ -1,0 +1,58 @@
+<template>
+    <p class="header">Contact Us</p>
+    <template if:true={IsBDMNull}>
+        <span class="subHeader">Business Development Manager</span>
+    </template>
+    <template if:false={IsBDMNull}>
+        <span class="subHeader">Business Development Associates</span>
+    </template>
+    <div class="slds-grid slds-wrap ">
+        <div class="slds-col slds-size_1-of-1 slds-medium-size_6-of-12 slds-large-size_3-of-12">
+            <div class="slds-card">
+                <div class="slds-grid slds-wrap">
+                    <div class="slds-col slds-size_1-of-1 slds-medium-size_6-of-12 slds-large-size_5-of-12 ">
+                    <!--image-->
+                    </div>
+                    <div class="slds-col slds-size_1-of-1 slds-medium-size_6-of-12 slds-large-size_7-of-12 ">
+                        <div class="conDetail">{BDMName}</div>
+                        <div class="conDetail">{BDMEmail}</div>
+                        <div class="conDetail">{BDMPhone}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slds-col slds-size_1-of-1 slds-medium-size_6-of-12 slds-large-size_7-of-12">
+            <template if:true={IsBDMNull}>
+                <span class="conDetail"> Business development managers are responsible for driving business growth within a company.
+                    They develop a network of contacts to attract new clients, research new market opportunities
+                    and oversee growth projects, making sales projections and forecasting revenue, in line with
+                    projected income.</span>
+            </template>
+            <template if:false={IsBDMNull}>
+                <span class="conDetail">A business development associate helps companies to boost growth and sales. They conduct market
+                    research, develop business strategies, build client relationships, and identify new business
+                    opportunities.
+                    Business development associates find work in a variety of industries from marketing to information
+                    technology.</span>
+            </template>
+            <div class="slds-card slds-has-bottom-magnet ">
+                <div class="slds-clearfix ">
+                    <div class="slds-float_left ">
+                        <p class="conDetail">{contactName}</p>
+                    </div>
+                </div>
+                <div class="slds-grid">
+                    <div class="slds-col sldsLabel ">
+                        Monday - Friday
+                    </div>
+                    <div class=" slds-col setBusinessHours">
+                        <p class="conDetail">{contactPhone}</p>
+                    </div>
+                </div>
+                <div class="sldsLabel ">
+                    8:00 am  - 5:00 pm  
+                </div>
+        </div>
+    </div>
+    </div>
+</template>

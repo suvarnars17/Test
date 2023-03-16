@@ -1,0 +1,18 @@
+.header{
+    font-size:24px;
+    font-weight:bold;
+    color: black;
+    padding-bottom: 20px !important ;
+}
+.subHeader{
+    font-size:20px;
+    font-weight:bold;
+    color: black;
+    padding-bottom:15px !important;
+    padding-left:15px !important;
+}
+.conDetail{
+    font-size:14px;
+    font-weight:bold;
+    color: black;  
+}

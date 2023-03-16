@@ -1,0 +1,15 @@
+<template>
+    <lightning-card>
+        <div>
+            <lightning-input type='text' label="Contact Name" placeholder="Enter contact Name...."
+                value={strContactName} onchange={changeName}></lightning-input>
+        </div>
+        <div>
+            <lightning-button variant="brand" label="Add Contact" title="Add Contact" onclick={addContact}
+                class="slds-p-around_medium"></lightning-button>
+        </div>
+        <div>
+            <c-child-Cmp></c-child-Cmp>
+        </div>
+    </lightning-card>
+</template>
